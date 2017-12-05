@@ -1,0 +1,173 @@
+body{
+  margin: 0;
+  padding: 0;
+  /*background: black;*/
+  background:url('../images/328254_10150586093877950_1772751658_o.jpg');
+  background:url('../images/bkg/avijon.jpg');
+  /*background:url('../images/bkg/IMG_8743.jpg');*/
+  /*background:url('../images/bkg/IMG_8768.jpg');*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh!important;
+  overflow-y: hidden;
+
+  /*background-repeat: repeat-x;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*animation: changeBackground 5s linear;*/
+  transition: background .5s linear;
+  overflow: none!important;
+}
+html,body{
+  height: 100%;
+}
+.body_photography{
+  background: #f4f4f4;
+  background:url('../images/bkg.jpg');
+  /*background: red;*/
+  justify-content: flex-start;
+}
+
+h1{
+  padding: 1em;
+  font-family: 'Source Code Pro', monospace;
+}
+ul{
+  list-style-type: none;
+  padding: 0!important;
+
+}
+li{
+}
+
+a{
+  color:black;
+  text-decoration: none;
+  font-family: 'Exo 2', sans-serif;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 28px;
+  line-height: 100px;
+  /*font-weight:900;*/
+}
+
+img{
+  /*width: 200px;*/
+  height: 200px;
+}
+.logo{
+  transition: all 2s;
+
+  align-self: center;
+}
+
+
+.circleLayer{
+  transition: all 5s;
+  animation: fillOut 6s;
+}
+
+@keyframes fillOut {
+  from{fill:transparent}
+  to{fill:#b30000}
+}
+.logo-small{
+  margin-top: 2.5em;
+  /*width: 300px;*/
+  /*height: 150px;*/
+  /*height: 577px;*/
+  background-image:url('../images/new_logo_04.png');
+  background-image:url('../images/tategami-white.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.changeColor{
+  background: #f4f4f4;
+  /*background-image:url('../images/12247692_10153382113242950_8710902314205058934_o.jpg');*/
+  /*animation-name:changeBackground;*/
+}
+
+@keyframes changeBackground {
+  /*from {background-color: red;}
+    to {background-color: black;}*/
+  from{background:black;}
+  to{background:maroon;}
+}
+.navMenu{
+  z-index: 99;
+  position: absolute;
+  left: 0;
+  margin-left: -25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 25%;
+  opacity: 0.9;
+  background: #f4f4f4;
+  transition: margin-left .3s ease-out;
+}
+
+.close{
+  position: absolute;
+  top:2em;
+  right: 2em;
+  font-size: 26px;
+}
+.hamburger{
+  position: absolute;
+  top:2em;
+  left:2em;
+  width: 30px;
+  height: 30px;
+  background-image:url('../images/Hamburger_icon.svg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+}
+* { box-sizing: border-box; }
+
+/*MASONRY SETTINGS*/
+/* ---- grid ---- */
+
+.grid {
+  width: 100%;
+}
+
+.grid-photofraphy{
+}
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 10%;
+}
+
+.grid-item {
+  float: left;
+}
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+.album-cover{
+  width: 30%;
+  padding: 2em;
+}
+.album-cover img{
+  display: inline;
+  text-align: center;
+}
